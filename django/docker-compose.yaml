@@ -1,0 +1,38 @@
+version : "3" 
+services : 
+  
+  sqlite : 
+    build : .
+    ports :
+      - "3034:8000"
+    command : ["runserver","--settings=energy.settings.sqlite","0.0.0.0:8000"]
+    volumes : 
+      - .:/logs
+
+  postgres-db : 
+    image: postgres
+    volumes : 
+      - ./pgdata:/var/lib/postgresql/data
+    # ports : 
+      # - "5432:5432"
+  
+  postgres:
+    build : .
+    volumes : 
+      - .:/logs
+    ports :
+      - "3035:8000"
+    command : ["runserver","--settings=energy.settings.postgres","0.0.0.0:8000"]
+    depends_on:
+      - postgres-db 
+
+
+
+# version: '3'
+# services:
+#   web:
+#     build: .
+#     ports:
+#       - "5000:5000"
+#   redis:
+#     image: "redis:alpine"
