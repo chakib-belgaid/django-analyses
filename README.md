@@ -9,9 +9,10 @@ We measure the energy consumption of a django web application. by running a scri
 
 ## early resutls : 
 
+
+![energy consumption data ](https://github.com/chakib-belgaid/django-analyses/raw/master/images/django-data.png)
+
 ![energy consumption](https://github.com/chakib-belgaid/django-analyses/raw/master/images/django.png)
-
-
 
 # TODO 
 
