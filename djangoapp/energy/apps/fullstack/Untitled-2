@@ -1,0 +1,1 @@
+f.writeline(f"{line['name']},"{line['PKG']},"{line['DRAM']},"{line['TIME']},"{line['AV POWER']},"{line['workers']}"
