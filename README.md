@@ -7,10 +7,15 @@ We measure the energy consumption of a django web application. by running a scri
 - compute the data 
 - render the data in the django webpage 
 
+
+Remarque the pypy couldn't launch the postgress implementation because it is note compatible with the module psycopg2-binary 
+
 ## early resutls : 
 
 
 ![energy consumption data ](https://github.com/chakib-belgaid/django-analyses/raw/master/images/django-data.png)
+
+![energy consumption data 2](https://github.com/chakib-belgaid/django-analyses/raw/master/images/django-data2.png)
 
 ![energy consumption](https://github.com/chakib-belgaid/django-analyses/raw/master/images/django.png)
 
