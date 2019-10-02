@@ -10,14 +10,34 @@ We measure the energy consumption of a django web application. by running a scri
 
 Remarque the pypy couldn't launch the postgress implementation because it is note compatible with the module psycopg2-binary 
 
-## early resutls : 
+# How to do : 
 
+- To start the application with sqlite 
+
+    docker-compose up -d sqlite 
+
+- To start the application with postgres 
+
+    docker-compose up -d postgres
+
+# early resutls : 
+
+
+## Energy consumption data 
 
 ![energy consumption data ](https://github.com/chakib-belgaid/django-analyses/raw/master/images/django-data.png)
 
+## With groups 
 ![energy consumption data 2](https://github.com/chakib-belgaid/django-analyses/raw/master/images/django-data2.png)
 
+## Energy consumption Measures normalized according to the lowest value 
+
+![energy consumption data normalized ](https://github.com/chakib-belgaid/django-analyses/raw/master/images/django-data-norm.png)
+
+## Box plots of the energy consumptions 
 ![energy consumption](https://github.com/chakib-belgaid/django-analyses/raw/master/images/django.png)
+
+
 
 # TODO 
 
@@ -25,4 +45,5 @@ Remarque the pypy couldn't launch the postgress implementation because it is not
 - Setup a gatling to simulate stress requests 
 - Assiciate employees to events 
 - Find the function respinsible of invoking the threads to handle each request 
+
 
