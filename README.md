@@ -37,6 +37,8 @@ Remarque the pypy couldn't launch the postgress implementation because it is not
 ## Box plots of the energy consumptions 
 ![energy consumption](https://github.com/chakib-belgaid/django-analyses/raw/master/images/django.png)
 
+## Energy consumption based on unit tests 
+![unit tests energy consumption ](https://github.com/chakib-belgaid/django-analyses/raw/master/images/django-unitests.png)
 
 
 # TODO 
